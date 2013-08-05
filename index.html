@@ -6,7 +6,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<style>
-	    .carousel .container {
+	.carousel .container {
       position: relative;
       z-index: 9;
 	  width: 100%;
@@ -16,13 +16,25 @@
       z-index: -10;
 	  width: 100%;
     }
+	.carousel-interactivo {
+		  position: absolute;
+		  left: 50%;
+		  top: 57%;
+
+		  padding: 15px;
+	}
 	
+	.carousel-interactivo a {
+		  position: relative;
+		  left: -53%;
+	}
  .carousel-caption h1,
     .carousel-caption .lead {
-      left: -500px;
+	 position: absolute;
+	margin:140px 0px 0px 130px;
       line-height: 1.25;
       color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+     
     }
 	</style>
   </head>
@@ -54,7 +66,32 @@
 	<div class="item"> <img src="img/slide8.jpg" alt=""></div>
 	<div class="item"> <img src="img/slide9.jpg" alt=""></div>
 	<div class="item"> <img src="img/slide10.jpg" alt=""></div>
-	<div class="item"> <img src="img/slide11.jpg" alt=""></div>
+	<div class="item">
+		<img src="img/slide11.jpg" alt="">
+		  <div class="carousel-interactivo">
+		  <a href="#modalInscribete" 
+		  role="button" class="btn btn-large btn-info" data-toggle="modal">Suscríbete | Mujeres Moviendo México</a>
+		</div>
+	
+<!-- Modal -->
+<form>
+<div id="modalInscribete" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Suscribite</h3>
+  </div>
+  <div class="modal-body">
+    <p>Suscríbete para recibir más información sobre Mujeres Moviendo México</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+    <button class="btn btn-primary">Suscribir</button>
+  </div>
+</div>
+</form>
+		
+		
+	</div>
 
 
   </div>
